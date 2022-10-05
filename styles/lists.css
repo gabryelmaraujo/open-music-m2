@@ -1,0 +1,29 @@
+
+.genreButtonUl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.genreButton {
+    padding: 0.5rem;
+    margin-right: 1.875em;
+    margin-bottom: 2em;
+
+    font-size: var(--font-3);
+    color: var(--color-grey-2);
+
+    border: 1px black solid;
+
+
+    cursor: pointer;
+}
+.genreButton:hover {
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-8);
+}
+
+.ulCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

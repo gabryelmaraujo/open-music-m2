@@ -1,0 +1,55 @@
+
+.albumCard {
+    width: 19.375em;
+    height: 16.25em;
+    margin-bottom: 2.375em;
+}
+
+.albumImg {
+    border-radius: 0;
+}
+.albumImg img {
+    max-width: 100%;
+    border-radius: var(--radius-1) var(--radius-1) 0 0;
+}
+
+.albumMain {
+    padding: 16px;
+}
+
+.creatorInfos {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: var(--color-grey-2);
+}
+.creatorName {
+    margin-right: 20px;
+}
+
+.albumInfos {
+    margin-bottom: 20px;
+    font-size: var(--font-2);
+    font-weight: 600;
+}
+.albumPrice{
+    font-size: var(--font-2);
+    font-weight: 600;
+}
+
+.buySection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buyButton button{
+    border: none;
+    padding: 1em;
+    border-radius: var(--radius-1);
+    cursor: pointer;
+}
+.buyButton button:hover{
+    background-color: var(--color-grey-2);
+    color: var(--color-grey-8);
+}

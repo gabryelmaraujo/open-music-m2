@@ -1,0 +1,21 @@
+
+header {
+    height: 6.25em;
+}
+
+nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+
+    height: 100%;
+}
+
+.logoDiv {
+    margin-right: 28.125em;
+}
+.darkModeDiv {
+
+}
