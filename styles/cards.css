@@ -53,3 +53,7 @@
     background-color: var(--color-grey-2);
     color: var(--color-grey-8);
 }
+
+.hidden{
+    display: none;
+}
