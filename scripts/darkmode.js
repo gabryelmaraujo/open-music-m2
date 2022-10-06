@@ -22,3 +22,12 @@ function darkMode(){
     })
 }
 darkMode()
+
+const dmPref = localStorage.getItem('darkmode')
+const dmIcon = document.querySelector('.dmIcon')
+
+if(dmPref){
+    const html = document.querySelector('html')
+    html.classList.add('darkMode')
+    dmIcon.src = "/assets/img/sun.svg"
+}
