@@ -12,7 +12,7 @@
     font-size: var(--font-3);
     color: var(--color-grey-2);
 
-    border: 1px black solid;
+    border: 1px var(--color-grey-1) solid;
 
 
     cursor: pointer;

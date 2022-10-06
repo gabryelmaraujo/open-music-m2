@@ -1,15 +1,17 @@
 
-let darkButton = document.querySelector('.darkModeButton')
-let body = document.querySelector('body')
-let nav = document.querySelector('nav')
-let h1 = document.querySelector('h1')
-let logoDiv = document.querySelector('div')
-let buttons = document.querySelectorAll('button')
+function darkMode(){
+    const dmButton = document.querySelector('.darkModeButton')
+    const dmIcon = document.querySelector('.dmIcon')
+    const html = document.querySelector('html')
 
-darkButton.addEventListener('click', ()=>{
-    body.classList.toggle('darkMode')
-    nav.classList.toggle('darkMode')
-    h1.classList.toggle('darkMode')
-    logoDiv.classList.toggle('darkMode')
-    buttons.classList.toggle('darkMode')
-})
+    dmButton.addEventListener('click', ()=>{
+        html.classList.toggle('darkMode')
+
+        if(html.classList.contains('darkMode')){
+            dmIcon.src = "/assets/img/sun.svg"
+        }else{
+            dmIcon.src = "/assets/img/moon.svg"
+        }
+    })
+}
+darkMode()

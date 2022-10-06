@@ -2,4 +2,6 @@
     border: none;
 
     cursor: pointer;
+
+    background-color: var(--color-grey-9);
 }
