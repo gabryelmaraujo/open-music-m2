@@ -7,6 +7,13 @@ function darkMode(){
     dmButton.addEventListener('click', ()=>{
         html.classList.toggle('darkMode')
 
+        let dmPref = localStorage.getItem('darkmode')
+        if(!dmPref){
+            localStorage.setItem('darkmode', true)
+        }else{
+            localStorage.removeItem('darkmode')
+        }
+
         if(html.classList.contains('darkMode')){
             dmIcon.src = "/assets/img/sun.svg"
         }else{
