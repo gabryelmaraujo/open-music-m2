@@ -4,11 +4,11 @@ let priceInput = document.querySelector('.priceInput')
 let arrPrices = products.map((product)=>{
     return product.price
 })
-console.log(arrPrices)
+
 let maxPrice = arrPrices.reduce((a,b)=>{
     return Math.max(a, b)
 })
-console.log(maxPrice)
+
 
 
 let rangeInput = document.createElement('input')
@@ -26,9 +26,9 @@ rangeInput.addEventListener('mousemove', ()=>{
 
 //------------------------------------------
 let itens = document.querySelectorAll('.albumCard')
-console.log(itens)
+
 let liArr = Array.from(itens)
-console.log(liArr)
+
 liArr.forEach((li)=>{
     let liChildArr = Array.from(li.children)
     let albumMain = liChildArr[1]
